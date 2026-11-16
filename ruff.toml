@@ -1,0 +1,9 @@
+[lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["B008"]  # FastAPI's Depends() in defaults is the documented idiom
+
+[lint.per-file-ignores]
+"tests/*" = ["E501"]
+
+[lint.pycodestyle]
+max-line-length = 100
